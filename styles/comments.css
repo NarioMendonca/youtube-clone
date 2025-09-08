@@ -1,0 +1,48 @@
+.video-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+
+  .comments-count {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.user-pic {
+  min-width: 3rem;
+  height: 3rem;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+
+.comment-info {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  .comment-user-info {
+    font-size: .8rem;
+    
+    .comment-username { font-weight: bold; }
+    .comment-data {
+      color: var(--gray);
+    }
+  }
+  
+  .comment-content {
+    font-size: .9rem;
+  }
+}
+

@@ -1,0 +1,81 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content content";
+  grid-template-rows: 100px 1fr;
+  min-height: 100vh;
+}
+
+.content-container {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 0 4rem;
+}
+
+.header {
+  grid-area: header;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hamburger-menu {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.youtubeLogo {
+  width: 150px;
+  height: auto;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input {
+  width: 546px;
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid gray;
+}
+
+.search-bar button {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 0 20px 20px 0;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+#mic {
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons img {
+  width: 40px;
+  border-radius: 50%;
+}
