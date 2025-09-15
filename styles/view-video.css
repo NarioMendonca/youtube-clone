@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content content";
+  grid-template-rows: 100px 1fr;
+  min-height: 100vh;
+}
+
+.content-container {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 0 4rem;
+  margin-bottom: 2rem;
+}
+
+.main {
+  padding: 0 .5rem;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .content-container {
+    margin: 0 .5rem 2rem .5rem;
+  }
+} 
+
+@media screen and (max-width: 1024px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 .25rem 2rem .25rem;
+  }
+}

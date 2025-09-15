@@ -1,32 +1,22 @@
-.container {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "content content";
-  grid-template-rows: 100px 1fr;
-  min-height: 100vh;
-}
-
-.content-container {
-  grid-area: content;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  margin: 0 4rem;
+@font-face {
+  font-family: "youtube-sans";
+  src: url('../styles/fonts/YouTubeSansBold.otf');
 }
 
 .header {
+  display: flex;
   grid-area: header;
   background: #fff;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
+  gap: 1rem;
 }
 
 .left-section {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 3rem;
 }
 
 .hamburger-menu {
@@ -36,18 +26,30 @@
   cursor: pointer;
 }
 
-.youtubeLogo {
-  width: 150px;
-  height: auto;
+.logo {
+  display: flex;
+  gap: .25rem;
+  align-items: center;
+  text-decoration: none;
+  img {
+    width: 64px;
+  }
+
+  span {
+    font-family: youtube-sans;
+    font-size: 3rem;
+  }
 }
 
 .search-bar {
   display: flex;
+  flex-shrink: 1;
+  flex-basis: 34.125rem;
 }
 
 .search-bar input {
-  width: 546px;
-  padding: 10px;
+  width: 100%;
+  padding: .5rem;
   border-radius: 20px 0 0 20px;
   border: 1px solid gray;
 }
@@ -78,4 +80,16 @@
 .icons img {
   width: 40px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 880px) {
+  .left-section {
+    gap: 0;
+  }
+
+  .logo {
+    span {
+      display: none;
+    }
+  }
 }

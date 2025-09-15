@@ -9,108 +9,12 @@
   height: 100vh;
 }
 
-.header {
-  grid-area: header;
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 30px;
-}
-
-.left-section {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.hamburger-menu {
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.youtubeLogo {
-  width: 150px;
-  height: auto;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  background: #ffffff;
-  padding: 10px;
-  width: 100px;
-}
-
-.shortcut {
-  padding: 10px;
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  font-size: 12px;
-}
-
-.shortcut:hover {
-  background-color: rgb(211, 211, 211);
-  border-radius: 10px;
-}
-
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar li {
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-.search-bar {
-  display: flex;
-}
-
-.search-bar input {
-  width: 546px;
-  padding: 10px;
-  border-radius: 20px 0 0 20px;
-  border: 1px solid gray;
-}
-
-.search-bar button {
-  cursor: pointer;
-  padding: 10px;
-  border: 1px solid gray;
-  border-radius: 0 20px 20px 0;
-  transition: 0.3s;
-}
-
-.search-bar button:hover {
-  background-color: rgb(214, 214, 214);
-}
-
-#mic {
-  border-radius: 50%;
-  margin-left: 20px;
-}
-
-.icons {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.icons img {
-  width: 40px;
-  border-radius: 50%;
-}
-
 .recomendado {
   grid-area: recomended;
   background: white;
   padding: 10px 20px;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 

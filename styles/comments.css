@@ -8,6 +8,8 @@
     font-weight: bold;
     font-size: 1.2rem;
   }
+
+  .view-more { display: none; }
 }
 
 .comment {
@@ -42,7 +44,41 @@
   }
   
   .comment-content {
+    display: -webkit-box;
+    word-break: keep-all;
+    hyphens: auto;
     font-size: .9rem;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .video-comments {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--gray-lightness);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--gray-lighter);
+    }
+
+    .view-more {
+      display: block;
+      width: 3rem;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: var(--gray-lightness);
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
 }
 
